@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact us </title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+    <header>
+        <h1>HD'S stores</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html" ><strong>Home</strong></a></li>
+                <li><a href="new.html"><strong>Product</strong></a></li>
+                <li><a href="logout.php" class="btn">logout</a></li>
+                
+                <li><a href="contact.html" style="text-decoration: underline;text-decoration-color: darkmagenta;"><strong>Contact Us</strong></a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="contact">
+        <div class="content">
+            <h2>contact us</h2>
+            <p>Welcome to our delightful biscuit shop! We value your satisfaction and are eager to assist you. Whether you have inquiries about our scrumptious treats or wish to place an order,
+                our friendly team is here to help. Feel free to reach out through phone or email, and we'll promptly respond. Your feedback is invaluable to us as we strive to deliver the finest biscuits. 
+                Thank you for choosing us!</p>
+        </div> 
+        <div class="container">
+            <div class="contactInfo">
+                <div class="box">
+                    <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+                    <div class="text">
+                        <h3>Address</h3>
+                        <p>Door No:18, AL Block<br>4th Avenue,Shanthi Colony<br>Anna nagar,Chennai-600040</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
+                    <div class="text">
+                        <h3>Phone</h3>
+                        <p>99944 58122,86089 91164</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></div>
+                    <div class="text">
+                        <h3>Email</h3>
+                        <p>biscuitcorner43@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contactForm">
+                <form>
+                    <h2>Send Message</h2>
+                    <div class="inputBox">
+                        <span>Full Name</span>
+                        <input type="text" name="" id="na" required>
+                        
+                    </div>
+                    <div class="inputBox">
+                        <span>Email</span>
+                        <input type="text" name="" id="em" required>
+                        
+                    </div>
+                     <div class="inputBox">
+                        <span>Type Your Message...</span>
+                        <textarea id="ty" required></textarea>
+                        
+                    </div>
+                    <div class="inputBox">
+                        <input type="submit" name="" value="send" onclick="validate()">
+                        
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </section> 
+
+   
+    
+    <script>
+        function validate() {
+          
+
+            
+            const fullName = document.getElementById("na").value.trim();
+            const email = document.getElementById("em").value.trim();
+            const message = document.getElementById("ty").value.trim();
+
+            
+            if (fullName === "" || email === "" || message === "") {
+                alert("Fill required areas.");
+            } else {
+                alert("Your feedback saved successfully :)...Thanks for your feedback!");
+            
+            }
+        }
+    </script>
+</body>
+</html>
